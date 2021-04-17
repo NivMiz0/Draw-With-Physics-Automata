@@ -1,0 +1,51 @@
+#pragma kernel CSMain
+#pragma kernel CSInit
+
+#define THREADS_X 32
+#define THREADS_Y 32
+
+struct CellData
+{
+  float2 position;
+  float4 color;
+};
+
+struct CellRelations
+{
+  CellData self;
+    CellData down;
+    CellData downRight;
+    CellData downLeft;
+    CellData right;
+    CellData left;
+    CellData up;
+    CellData upRight;
+    CellData upLeft;
+};
+
+RWStructuredBuffer<CellRelations> cells;
+RWTexture2D<float4> Result;
+
+[numthreads(THREADS_X, THREADS_Y, 1)]
+void CSInit(uint3 id : SV_DispatchThreadID)
+{
+    Result[id.xy] = float4(1, 1, 1, 1);
+}
+
+[numthreads(THREADS_X, THREADS_Y, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    CellRelations cell = cells[id.x];
+    float2 newPos;
+    if(all(cell.down.color) == all(float4(1, 1, 1, 1)))
+    {
+        newPos = float2(cell.self.position.x, cell.self.position.y - 1);
+    }
+    else
+    {
+        newPos = cell.self.position;
+    }
+
+    cell.self.position = newPos;
+    Result[int2(newPos.x, newPos.y)] = cell.self.color;
+}
