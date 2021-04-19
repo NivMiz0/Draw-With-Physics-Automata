@@ -33,7 +33,7 @@ public class SimulateCells : MonoBehaviour
     int texCoordX;
     int texCoordY;
 
-    //Directions dir;
+    // Directions dir;
 
     // Update is called once per frame
     void Update()
@@ -168,9 +168,19 @@ public class SimulateCells : MonoBehaviour
                     {
                         int rnd;
                         rnd = Random.Range(1, cell.corrodeSlowMod);
-                        if(rnd == 1 && CellTypeDatabase.instance.solids.Contains(down) && CellTypeDatabase.instance.cellObjects[CellTypeDatabase.instance.solids.IndexOf(down)].destructible)
+                        if (cell.useGasPowderGravity)
                         {
-                            texture.SetPixel(texCoordX, texCoordY - 1, Color.white);
+                            if (rnd == 1 && CellTypeDatabase.instance.solids.Contains(up) && CellTypeDatabase.instance.cellObjects[CellTypeDatabase.instance.solids.IndexOf(up)].destructible)
+                            {
+                                texture.SetPixel(texCoordX, texCoordY + 1, Color.white);
+                            }
+                        }
+                        else
+                        {
+                            if (rnd == 1 && CellTypeDatabase.instance.solids.Contains(down) && CellTypeDatabase.instance.cellObjects[CellTypeDatabase.instance.solids.IndexOf(down)].destructible)
+                            {
+                                texture.SetPixel(texCoordX, texCoordY - 1, Color.white);
+                            }
                         }
                     }
                     if (cell.morphOnCollision)
