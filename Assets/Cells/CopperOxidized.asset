@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4284800276
+    rgba: 4286242068
   cellName: Oxidized Copper
   state: 0
   isSolid: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
   corrode: 0
   corrodeSlowMod: 0
   selfDecay: 1
-  decaySlowMod: 1000
+  decaySlowMod: 200
   decayInto: {fileID: 0}
   morphOnCollision: 0
   morphSlowMod: 7

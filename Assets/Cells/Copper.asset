@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4278212040
+    rgba: 4278218440
   cellName: Copper
   state: 0
   isSolid: 1
@@ -31,7 +31,7 @@ MonoBehaviour:
   decaySlowMod: 0
   decayInto: {fileID: 0}
   morphOnCollision: 1
-  morphSlowMod: 40
+  morphSlowMod: 20
   morphCollision: {fileID: 11400000, guid: 31328be79769742c59416bb586f75246, type: 2}
   morphInto: {fileID: 11400000, guid: 8a68bb8d1abfc44308f5a8571ae02ab4, type: 2}
   destructible: 1

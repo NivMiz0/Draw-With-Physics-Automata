@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4280625971
+    rgba: 4281678918
   cellName: Hardened Cement
-  cellDescrip: Static solid that's immune to acid
   state: 0
   isSolid: 1
   isLiquid: 0

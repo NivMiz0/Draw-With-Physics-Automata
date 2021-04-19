@@ -14,21 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4279867831
+    rgba: 4281979362
   cellName: Sand
-  cellDescrip: Dynamic solid that forms pyramid piles
   state: 0
   isSolid: 1
   isLiquid: 0
   isGas: 0
+  isStatic: 0
   useRigidGravity: 0
   usePowderGravity: 1
   useLiquidGravity: 0
   useGasPowderGravity: 0
   corrode: 0
   corrodeSlowMod: 0
-  harden: 0
-  hardenInto: {fileID: 0}
-  hardenSlowMod: 7
+  selfDecay: 0
+  decaySlowMod: 0
+  decayInto: {fileID: 0}
+  morphOnCollision: 0
+  morphSlowMod: 7
+  morphCollision: {fileID: 0}
+  morphInto: {fileID: 0}
   destructible: 1
   floatSlowMod: 0
