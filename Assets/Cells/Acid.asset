@@ -30,9 +30,9 @@ MonoBehaviour:
   selfDecay: 0
   decaySlowMod: 0
   decayInto: {fileID: 0}
-  morphOnCollision: 0
+  morphOnCollision: 1
   morphSlowMod: 7
-  morphCollision: {fileID: 0}
-  morphInto: {fileID: 0}
+  morphCollision: {fileID: 11400000, guid: 05fb257fbc10f824696445558423b1b7, type: 2}
+  morphInto: {fileID: 11400000, guid: e60f485ccbd451542beb7a596214c970, type: 2}
   destructible: 0
   floatSlowMod: 0
