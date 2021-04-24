@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4294836130
+    rgba: 4293254324
   cellName: Oxygen
   state: 2
   isSolid: 0
@@ -30,9 +30,9 @@ MonoBehaviour:
   selfDecay: 0
   decaySlowMod: 1000
   decayInto: {fileID: 0}
-  morphOnCollision: 0
+  morphOnCollision: 1
   morphSlowMod: 7
-  morphCollision: {fileID: 0}
-  morphInto: {fileID: 0}
+  morphCollision: {fileID: 11400000, guid: 2cec9833b164c72469b633e5e0d8dcb8, type: 2}
+  morphInto: {fileID: 11400000, guid: 531db62aa4ae7b84db3967c029d5bbe4, type: 2}
   destructible: 0
   floatSlowMod: 4

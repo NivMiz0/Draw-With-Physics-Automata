@@ -14,21 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4278255361
+    rgba: 4282836295
   cellName: Acid
-  cellDescrip: Dynamic liquid that corrodes most solids
   state: 1
   isSolid: 0
   isLiquid: 1
   isGas: 0
+  isStatic: 0
   useRigidGravity: 0
   usePowderGravity: 0
   useLiquidGravity: 1
   useGasPowderGravity: 0
   corrode: 1
   corrodeSlowMod: 12
-  harden: 0
-  hardenInto: {fileID: 0}
-  hardenSlowMod: 7
+  selfDecay: 0
+  decaySlowMod: 0
+  decayInto: {fileID: 0}
+  morphOnCollision: 1
+  morphSlowMod: 7
+  morphCollision: {fileID: 11400000, guid: 05fb257fbc10f824696445558423b1b7, type: 2}
+  morphInto: {fileID: 11400000, guid: e60f485ccbd451542beb7a596214c970, type: 2}
   destructible: 0
   floatSlowMod: 0

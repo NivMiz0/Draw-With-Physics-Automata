@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39c133d7ff3594b468de91e2602330b9, type: 3}
-  m_Name: Copper
+  m_Name: Lava
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4278218440
-  cellName: Copper
-  state: 0
-  isSolid: 1
-  isLiquid: 0
+    rgba: 4279903999
+  cellName: Lava
+  state: 1
+  isSolid: 0
+  isLiquid: 1
   isGas: 0
-  isStatic: 1
+  isStatic: 0
   useRigidGravity: 0
   usePowderGravity: 0
-  useLiquidGravity: 0
+  useLiquidGravity: 1
   useGasPowderGravity: 0
   corrode: 0
-  corrodeSlowMod: 0
+  corrodeSlowMod: 7
   selfDecay: 0
   decaySlowMod: 0
   decayInto: {fileID: 0}
-  morphOnCollision: 1
-  morphSlowMod: 20
-  morphCollision: {fileID: 11400000, guid: 31328be79769742c59416bb586f75246, type: 2}
-  morphInto: {fileID: 11400000, guid: 8a68bb8d1abfc44308f5a8571ae02ab4, type: 2}
-  destructible: 1
-  floatSlowMod: 0
+  morphOnCollision: 0
+  morphSlowMod: 0
+  morphCollision: {fileID: 0}
+  morphInto: {fileID: 0}
+  destructible: 0
+  floatSlowMod: 10

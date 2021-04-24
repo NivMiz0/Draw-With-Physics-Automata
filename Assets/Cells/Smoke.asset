@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4291348680
+    rgba: 4290690750
   cellName: Smoke
   state: 2
   isSolid: 0

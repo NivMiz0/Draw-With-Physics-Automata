@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4285711335
+    rgba: 4285710562
   cellName: Ceramic
-  cellDescrip: Static solid that's immune to acid
   state: 0
   isSolid: 1
   isLiquid: 0
