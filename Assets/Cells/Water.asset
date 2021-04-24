@@ -16,19 +16,28 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294929152
   cellName: Water
-  cellDescrip: Dynamic liquid that creates waves
   state: 1
   isSolid: 0
   isLiquid: 1
   isGas: 0
+  isStatic: 0
   useRigidGravity: 0
   usePowderGravity: 0
   useLiquidGravity: 1
-  useGasPowderGravity: 0
+  useGasGravity: 0
   corrode: 0
   corrodeSlowMod: 0
-  harden: 0
-  hardenInto: {fileID: 0}
-  hardenSlowMod: 7
+  selfDecay: 0
+  decaySlowMod: 0
+  decayInto: {fileID: 0}
+  morphOnCollision: 1
+  numInteractions: 1
+  morphSlowMod: 01000000
+  morphCollision:
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
+  morphInto:
+  - {fileID: 11400000, guid: ff7c3e53180fa4ec8a58af7a2386e676, type: 2}
+  goThrough:
+  - {fileID: 11400000, guid: cbd2541d55243481dabd5ff371099039, type: 2}
   destructible: 0
   floatSlowMod: 0

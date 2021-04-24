@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c133d7ff3594b468de91e2602330b9, type: 3}
+  m_Name: Hydrogen
+  m_EditorClassIdentifier: 
+  color:
+    serializedVersion: 2
+    rgba: 4288834358
+  cellName: Hydrogen
+  state: 2
+  isSolid: 0
+  isLiquid: 0
+  isGas: 1
+  isStatic: 0
+  useRigidGravity: 0
+  usePowderGravity: 0
+  useLiquidGravity: 0
+  useGasGravity: 1
+  corrode: 0
+  corrodeSlowMod: 0
+  selfDecay: 0
+  decaySlowMod: 1000
+  decayInto: {fileID: 0}
+  morphOnCollision: 1
+  numInteractions: 3
+  morphSlowMod: 030000000200000009000000
+  morphCollision:
+  - {fileID: 11400000, guid: 756eba119ee254a34aa2aef5992353d9, type: 2}
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
+  - {fileID: 11400000, guid: 31328be79769742c59416bb586f75246, type: 2}
+  morphInto:
+  - {fileID: 11400000, guid: 756eba119ee254a34aa2aef5992353d9, type: 2}
+  - {fileID: 11400000, guid: 756eba119ee254a34aa2aef5992353d9, type: 2}
+  - {fileID: 11400000, guid: c8e0ff63ef3ba4f55ad4e7a3daa85c5b, type: 2}
+  goThrough:
+  - {fileID: 11400000, guid: c8e0ff63ef3ba4f55ad4e7a3daa85c5b, type: 2}
+  - {fileID: 11400000, guid: ace3416624ffa4841ba1264e8e73bfaa, type: 2}
+  - {fileID: 11400000, guid: d8be62ed1fe4d4a45ab5636d7223158c, type: 2}
+  - {fileID: 11400000, guid: a88d98fd6bf884a9cad99c662b36b17a, type: 2}
+  - {fileID: 11400000, guid: 5b9d209889a4f439e8c90df283aa7a28, type: 2}
+  - {fileID: 11400000, guid: cbd2541d55243481dabd5ff371099039, type: 2}
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
+  - {fileID: 11400000, guid: 90a5e194464b7412ba3f9d06463ae1b7, type: 2}
+  - {fileID: 11400000, guid: dd1294679075f4557993a628c0c3d42a, type: 2}
+  destructible: 0
+  floatSlowMod: 3

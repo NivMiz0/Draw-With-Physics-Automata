@@ -16,33 +16,37 @@ public class PlaceCell : MonoBehaviour
 
     private void Start()
     {
-        /*if (File.Exists(Application.dataPath + $"/../SavedPixelWorld.png"))
+        for (int x = 0; x < texture.width; x++)
         {
-            Graphics.CopyTexture(LoadPNG(Application.dataPath + $"/../SavedPixelWorld.png"), texture);
-        }
-        else
-        {
-            for (int x = 0; x < texture.width; x++)
+            for (int y = 0; y < texture.height; y++)
             {
-                for (int y = 0; y < texture.height; y++)
+                if(x == texture.width - 1|| x == 0 || y == 0 || y == texture.height - 1)
                 {
-                    if(x == texture.width - 1|| x == 0 || y == texture.height - 1)
-                    {
-                        texture.SetPixel(x, y, Color.black);
-                    }
-                    else if (texture.GetPixel(x, y) != Color.white)
-                    {
-                        texture.SetPixel(x, y, Color.white);
-                    }
+                    texture.SetPixel(x, y, Color.black);
+                }
+                else if (texture.GetPixel(x, y) != Color.white)
+                {
+                    texture.SetPixel(x, y, Color.white);
                 }
             }
-        }*/
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        brushRad = Mathf.Clamp(brushRad - (int)Input.mouseScrollDelta.y, 1, 8);
+        if((int)Input.mouseScrollDelta.y != 0)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                if (hit.transform.gameObject.layer != LayerMask.NameToLayer("UI"))
+                {
+                    brushRad = Mathf.Clamp(brushRad - (int)Input.mouseScrollDelta.y, 1, 8);
+                }
+            }
+        }
         if (Input.GetMouseButton(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

@@ -16,20 +16,31 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4282996069
   cellName: Powdered Cement
-  cellDescrip: Dynamic solid that forms pyramid piles
   state: 0
   isSolid: 1
   isLiquid: 0
   isGas: 0
+  isStatic: 0
   useRigidGravity: 0
   usePowderGravity: 1
   useLiquidGravity: 0
-  useGasPowderGravity: 0
+  useGasGravity: 0
   corrode: 0
   corrodeSlowMod: 0
+  selfDecay: 0
+  decaySlowMod: 0
+  decayInto: {fileID: 0}
   morphOnCollision: 1
-  morphSlowMod: 11
-  morphCollision: {fileID: 11400000, guid: c8e0ff63ef3ba4f55ad4e7a3daa85c5b, type: 2}
-  morphInto: {fileID: 11400000, guid: d1763c22018a845b8809115ca748893a, type: 2}
+  numInteractions: 3
+  morphSlowMod: 0b0000000b0000000b000000
+  morphCollision:
+  - {fileID: 11400000, guid: c8e0ff63ef3ba4f55ad4e7a3daa85c5b, type: 2}
+  - {fileID: 11400000, guid: 90a5e194464b7412ba3f9d06463ae1b7, type: 2}
+  - {fileID: 11400000, guid: d1763c22018a845b8809115ca748893a, type: 2}
+  morphInto:
+  - {fileID: 11400000, guid: d1763c22018a845b8809115ca748893a, type: 2}
+  - {fileID: 11400000, guid: d1763c22018a845b8809115ca748893a, type: 2}
+  - {fileID: 11400000, guid: d1763c22018a845b8809115ca748893a, type: 2}
+  goThrough: []
   destructible: 1
   floatSlowMod: 0

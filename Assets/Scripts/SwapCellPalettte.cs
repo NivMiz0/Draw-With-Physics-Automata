@@ -25,7 +25,7 @@ public class SwapCellPalettte : MonoBehaviour
         {
             for (int y = 0; y < texture.height; y++)
             {
-                if (x == texture.width - 1 || x == 0 || y == texture.height - 1)
+                if (x == texture.width - 1 || x == 0 || y == 0 || y == texture.height - 1)
                 {
                     texture.SetPixel(x, y, Color.black);
                 }

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c133d7ff3594b468de91e2602330b9, type: 3}
+  m_Name: None
+  m_EditorClassIdentifier: 
+  color:
+    serializedVersion: 2
+    rgba: 4294967295
+  cellName: 
+  state: 0
+  isSolid: 1
+  isLiquid: 0
+  isGas: 0
+  isStatic: 0
+  useRigidGravity: 0
+  usePowderGravity: 0
+  useLiquidGravity: 0
+  useGasGravity: 0
+  corrode: 0
+  corrodeSlowMod: 7
+  selfDecay: 0
+  decaySlowMod: 0
+  decayInto: {fileID: 0}
+  morphOnCollision: 0
+  numInteractions: 0
+  morphSlowMod: 
+  morphCollision: []
+  morphInto: []
+  destructible: 0
+  floatSlowMod: 10

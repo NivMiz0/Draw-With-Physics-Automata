@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4284800276
-  cellName: Oxidized Copper
+    rgba: 4285514552
+  cellName: Copper
   state: 0
   isSolid: 1
   isLiquid: 0
@@ -24,15 +24,20 @@ MonoBehaviour:
   useRigidGravity: 0
   usePowderGravity: 0
   useLiquidGravity: 0
-  useGasPowderGravity: 0
+  useGasGravity: 0
   corrode: 0
   corrodeSlowMod: 0
-  selfDecay: 1
-  decaySlowMod: 1000
+  selfDecay: 0
+  decaySlowMod: 3000
   decayInto: {fileID: 0}
-  morphOnCollision: 0
-  morphSlowMod: 7
-  morphCollision: {fileID: 0}
-  morphInto: {fileID: 0}
-  destructible: 0
+  morphOnCollision: 1
+  numInteractions: 2
+  morphSlowMod: 0b00000006000000
+  morphCollision:
+  - {fileID: 11400000, guid: 90a5e194464b7412ba3f9d06463ae1b7, type: 2}
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
+  morphInto:
+  - {fileID: 11400000, guid: bc7f2d2de6b7443a6bebab029dedddaf, type: 2}
+  - {fileID: 11400000, guid: bc7f2d2de6b7443a6bebab029dedddaf, type: 2}
+  destructible: 1
   floatSlowMod: 0

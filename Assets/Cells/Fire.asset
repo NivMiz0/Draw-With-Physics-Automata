@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c133d7ff3594b468de91e2602330b9, type: 3}
+  m_Name: Fire
+  m_EditorClassIdentifier: 
+  color:
+    serializedVersion: 2
+    rgba: 4278218495
+  cellName: Fire
+  state: 3
+  isSolid: 0
+  isLiquid: 0
+  isGas: 0
+  isStatic: 1
+  useRigidGravity: 0
+  usePowderGravity: 0
+  useLiquidGravity: 0
+  useGasGravity: 0
+  corrode: 0
+  corrodeSlowMod: 7
+  selfDecay: 1
+  decaySlowMod: 6
+  decayInto: {fileID: 11400000, guid: 273a268f388ec4cc1871e19478cb5d2b, type: 2}
+  morphOnCollision: 1
+  numInteractions: 1
+  morphSlowMod: 03000000
+  morphCollision:
+  - {fileID: 11400000, guid: c8e0ff63ef3ba4f55ad4e7a3daa85c5b, type: 2}
+  morphInto:
+  - {fileID: 11400000, guid: ff7c3e53180fa4ec8a58af7a2386e676, type: 2}
+  goThrough: []
+  destructible: 0
+  floatSlowMod: 10

@@ -16,7 +16,6 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4285711335
   cellName: Ceramic
-  cellDescrip: Static solid that's immune to acid
   state: 0
   isSolid: 1
   isLiquid: 0
@@ -25,15 +24,18 @@ MonoBehaviour:
   useRigidGravity: 0
   usePowderGravity: 0
   useLiquidGravity: 0
-  useGasPowderGravity: 0
+  useGasGravity: 0
   corrode: 0
   corrodeSlowMod: 0
   selfDecay: 0
   decaySlowMod: 0
   decayInto: {fileID: 0}
-  morphOnCollision: 0
-  morphSlowMod: 7
-  morphCollision: {fileID: 0}
-  morphInto: {fileID: 0}
+  morphOnCollision: 1
+  numInteractions: 1
+  morphSlowMod: 06000000
+  morphCollision:
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
+  morphInto:
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
   destructible: 0
   floatSlowMod: 0

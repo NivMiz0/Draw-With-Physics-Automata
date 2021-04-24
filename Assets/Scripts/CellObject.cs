@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+using System;
 
 public enum StatesOfMatter
 {
@@ -42,7 +43,7 @@ public class CellObject : ScriptableObject
     [EnableIf("isLiquid")] [HideIf("isStatic")] [Tooltip("Gravity that makes the particle fall and spread to fill the available space.")]
     public bool useLiquidGravity = false;
     [EnableIf("isGas")] [HideIf("isStatic")] [Tooltip("Gravity that makes the particle rise into pyramid-shaped piles.")]
-    public bool useGasPowderGravity = false;
+    public bool useGasGravity = false;
 
     [Header("Properties")]
 
@@ -60,17 +61,21 @@ public class CellObject : ScriptableObject
 
     [Tooltip("Enable this to make this particle morph into another after colliding with the particle of your choice.")]
     public bool morphOnCollision;
+    [ShowIf("morphOnCollision")]
+    public int numInteractions;
     [ShowIf("morphOnCollision")] [Tooltip("The chance (after colliding) every frame for this particle to morph.")]
-    public int morphSlowMod = 7;
+    public int[] morphSlowMod;
     [ShowIf("morphOnCollision")] [Tooltip("The particle that, when this particle collides with it, this particle will morph.")]
-    public CellObject morphCollision;
+    public CellObject[] morphCollision;
     [ShowIf("morphOnCollision")] [Tooltip("The particle that this particle will morph into after colliding with the morph collision particle.")]
-    public CellObject morphInto;
+    public CellObject[] morphInto;
+
+    public List<CellObject> goThrough = new List<CellObject>();
 
     [Tooltip("Enable this to make your particle modifiable by other particles.")]
     public bool destructible;
 
-    [ShowIf("useGasPowderGravity")] [Tooltip("The chance every frame for your particle to rise.")]
+    [ShowIf("useGasGravity")] [Tooltip("The chance every frame for your particle to rise.")]
     public int floatSlowMod = 10;
 
     private void OnValidate()
@@ -99,5 +104,9 @@ public class CellObject : ScriptableObject
         {
             isGas = false;
         }
+
+        Array.Resize(ref morphSlowMod, numInteractions);
+        Array.Resize(ref morphCollision, numInteractions);
+        Array.Resize(ref morphInto, numInteractions);
     }
 }

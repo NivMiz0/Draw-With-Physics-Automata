@@ -24,15 +24,24 @@ MonoBehaviour:
   useRigidGravity: 0
   usePowderGravity: 0
   useLiquidGravity: 0
-  useGasPowderGravity: 0
+  useGasGravity: 0
   corrode: 0
   corrodeSlowMod: 0
   selfDecay: 0
   decaySlowMod: 0
   decayInto: {fileID: 0}
   morphOnCollision: 1
-  morphSlowMod: 40
-  morphCollision: {fileID: 11400000, guid: 31328be79769742c59416bb586f75246, type: 2}
-  morphInto: {fileID: 11400000, guid: 8a68bb8d1abfc44308f5a8571ae02ab4, type: 2}
-  destructible: 1
+  numInteractions: 4
+  morphSlowMod: 28000000080000002800000007000000
+  morphCollision:
+  - {fileID: 11400000, guid: 31328be79769742c59416bb586f75246, type: 2}
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
+  - {fileID: 11400000, guid: 8a68bb8d1abfc44308f5a8571ae02ab4, type: 2}
+  - {fileID: 11400000, guid: dd1294679075f4557993a628c0c3d42a, type: 2}
+  morphInto:
+  - {fileID: 11400000, guid: 8a68bb8d1abfc44308f5a8571ae02ab4, type: 2}
+  - {fileID: 11400000, guid: dd1294679075f4557993a628c0c3d42a, type: 2}
+  - {fileID: 11400000, guid: 8a68bb8d1abfc44308f5a8571ae02ab4, type: 2}
+  - {fileID: 11400000, guid: dd1294679075f4557993a628c0c3d42a, type: 2}
+  destructible: 0
   floatSlowMod: 0

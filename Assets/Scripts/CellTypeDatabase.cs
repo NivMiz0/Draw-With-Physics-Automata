@@ -12,13 +12,13 @@ public class CellTypeDatabase : MonoBehaviour
     }
 
     public CellObject[] cellObjects;
-    [HideInInspector]
+    //[HideInInspector]
     public List<Color32> colors = new List<Color32>();
-    [HideInInspector]
+    //[HideInInspector]
     public List<Color32> solids = new List<Color32>();
-    [HideInInspector]
+    //[HideInInspector]
     public List<Color32> liquids = new List<Color32>();
-    [HideInInspector]
+    //[HideInInspector]
     public List<Color32> gasses = new List<Color32>();
 
 

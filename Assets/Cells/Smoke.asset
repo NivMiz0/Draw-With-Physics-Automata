@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4291348680
+    rgba: 4283384125
   cellName: Smoke
   state: 2
   isSolid: 0
@@ -24,15 +24,26 @@ MonoBehaviour:
   useRigidGravity: 0
   usePowderGravity: 0
   useLiquidGravity: 0
-  useGasPowderGravity: 1
+  useGasGravity: 1
   corrode: 0
   corrodeSlowMod: 0
-  selfDecay: 0
-  decaySlowMod: 1000
+  selfDecay: 1
+  decaySlowMod: 600
   decayInto: {fileID: 0}
   morphOnCollision: 0
-  morphSlowMod: 7
-  morphCollision: {fileID: 0}
-  morphInto: {fileID: 0}
+  numInteractions: 0
+  morphSlowMod: 
+  morphCollision: []
+  morphInto: []
+  goThrough:
+  - {fileID: 11400000, guid: c8e0ff63ef3ba4f55ad4e7a3daa85c5b, type: 2}
+  - {fileID: 11400000, guid: ace3416624ffa4841ba1264e8e73bfaa, type: 2}
+  - {fileID: 11400000, guid: d8be62ed1fe4d4a45ab5636d7223158c, type: 2}
+  - {fileID: 11400000, guid: a88d98fd6bf884a9cad99c662b36b17a, type: 2}
+  - {fileID: 11400000, guid: 5b9d209889a4f439e8c90df283aa7a28, type: 2}
+  - {fileID: 11400000, guid: cbd2541d55243481dabd5ff371099039, type: 2}
+  - {fileID: 11400000, guid: ecf808a4eabe9414195d3a3edc1a1144, type: 2}
+  - {fileID: 11400000, guid: 90a5e194464b7412ba3f9d06463ae1b7, type: 2}
+  - {fileID: 11400000, guid: dd1294679075f4557993a628c0c3d42a, type: 2}
   destructible: 0
   floatSlowMod: 3
